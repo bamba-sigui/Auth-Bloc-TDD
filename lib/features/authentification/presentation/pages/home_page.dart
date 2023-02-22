@@ -24,7 +24,6 @@ class HomePage extends StatelessWidget {
                      Text('Prenom : ${state.user.lastName} '),
                      Text('email : ${state.user.emailAddress} '),
                      Text('Telephone : ${state.user.phoneNumber} '),
-
                   ]
                 );
               } else {
