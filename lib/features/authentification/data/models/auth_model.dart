@@ -23,6 +23,10 @@ class AuthModel extends Equatable {
   List<Object?> get props => [token, user];
 }
 
+
+
+
+
 class TokenModel extends Equatable {
   const TokenModel({
     required this.type,
@@ -68,6 +72,11 @@ class TokenModel extends Equatable {
   @override
   List<Object?> get props => [type, token];
 }
+
+
+
+
+
 
 class UserModel extends Equatable{
   UserModel({

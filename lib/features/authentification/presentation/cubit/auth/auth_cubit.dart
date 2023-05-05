@@ -20,8 +20,7 @@ class AuthCubit extends Cubit<AuthState> {
   getAuthLoaded() async {
     emit(GetLocalInProgress());
     try {
-      final Either<Failure, AuthModel> getUserLocal =
-          await getAuthLocalUseCase();
+      final Either<Failure, AuthModel> getUserLocal = await getAuthLocalUseCase();
       getUserLocal.fold((Failure failure) {
         emit(
           GetLocalFailure(),
